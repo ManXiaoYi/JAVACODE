@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;链表._83_删除排序链表中的重复元素&apos; to &apos;_083_删除排序链表中的重复元素&apos;&#x0A;- Original project: &apos;00-LeetCode&apos;&#x0A;- Original element: &apos;链表._83_删除排序链表中的重复元素&apos;&#x0A;- Renamed element: &apos;链表._083_删除排序链表中的重复元素&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_83_删除排序链表中的重复元素&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;链表{_83_删除排序链表中的重复元素.java[_83_删除排序链表中的重复元素" matchStrategy="1" name="_083_删除排序链表中的重复元素" qualified="false" references="true" similarDeclarations="false" stamp="1617800912257" textual="false" version="1.0"/>
+</session>

@@ -6,6 +6,8 @@ import java.util.Queue;
 
 import com.my.printer.BinaryTreeInfo;
 
+import apple.laf.JRSUIUtils.Tree;
+
 @SuppressWarnings("unchecked")
 
 public class BinarySearchTree<E> implements BinaryTreeInfo {
@@ -183,7 +185,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		if (root == null) {
 			return false;
 		}
-
+		
 		// 队列
 		Queue<Node<E>> queue = new LinkedList<>();
 		// 根节点 入队

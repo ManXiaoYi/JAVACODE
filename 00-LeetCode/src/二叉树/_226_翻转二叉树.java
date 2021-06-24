@@ -38,7 +38,7 @@ public class _226_翻转二叉树 {
 				stack.push(node.right);
 			}
 			
-			// node.left出栈
+			// node.left入栈栈
 			if (node.left != null) {
 				stack.push(node.left);
 			}

@@ -22,8 +22,12 @@ public class BST<E> extends BinaryTree<E> {
 
 		// 添加位置是第一个节点
 		if (root == null) {
-			root = new Node<>(element, null);
+			root = createNode(element, null);
+			
 			size++;
+			
+			// 新添加节点之后的处理
+			afterAdd(root);
 			return;
 		}
 
@@ -48,7 +52,7 @@ public class BST<E> extends BinaryTree<E> {
 		}
 
 		// 插入元素
-		Node<E> newNode = new Node<>(element, parent);
+		Node<E> newNode = createNode(element, parent);
 		if (compare > 0) {
 			parent.right = newNode;
 		} else {
@@ -56,7 +60,13 @@ public class BST<E> extends BinaryTree<E> {
 		}
 
 		size++;
+		
+		// 新添加节点之后的处理
+		afterAdd(newNode);
 	}
+	
+	// 添加node之后的调整
+	protected void afterAdd(Node<E> node) {}
 
 	public void remove(E element) {
 		remove(node(element));

@@ -18,7 +18,6 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 		Node<E> left;
 		Node<E> right;
 
-		
 		public Node(E element, Node<E> parent) {
 			this.element = element;
 			this.parent = parent;
@@ -34,6 +33,11 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 			return left != null && right != null;
 		}
 
+	}
+	
+	// 创建通用构造器 
+	protected Node<E> createNode(E element, Node<E> parent) {
+			return new Node<>(element, parent);
 	}
 
 	public int size() {

@@ -43,7 +43,7 @@ public class AVLTree<E> extends BST<E> {
 	protected void afterAdd(Node<E> node) {
 		// node的父节点 不为null时 循环
 		while ((node = node.parent) != null) {
-			if (isBalanced(node)) {
+			if (condition) {
 				
 			}
 		}

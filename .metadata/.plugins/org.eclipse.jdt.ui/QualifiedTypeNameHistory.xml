@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Visitor"/>
     <fullyQualifiedTypeName name="com.my.BinarySearchTree.Visitor"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.awt.TexturePaint"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.sun.media.sound.MidiInDeviceProvider"/>
     <fullyQualifiedTypeName name="二叉搜索树.TreeNode"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.debugger.remote.ppc64.RemotePPC64Thread"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
 </qualifiedTypeNameHistroy>

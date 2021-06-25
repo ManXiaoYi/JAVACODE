@@ -183,7 +183,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		if (root == null) {
 			return false;
 		}
-
+		
 		// 队列
 		Queue<Node<E>> queue = new LinkedList<>();
 		// 根节点 入队

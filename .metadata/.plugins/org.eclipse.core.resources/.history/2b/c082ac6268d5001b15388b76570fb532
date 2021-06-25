@@ -6,6 +6,8 @@ import java.util.Queue;
 
 import com.my.printer.BinaryTreeInfo;
 
+import apple.laf.JRSUIUtils.Tree;
+
 @SuppressWarnings("unchecked")
 
 public class BinarySearchTree<E> implements BinaryTreeInfo {
@@ -481,7 +483,6 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 	// 前驱节点 - 后继节点
 	// --------------------------------------------------------------------------
 	// 前驱结点：中序遍历时的前一个节点
-	@SuppressWarnings("unused")
 	private Node<E> predecessor(Node<E> node) {
 		if (node == null) {
 			return null;

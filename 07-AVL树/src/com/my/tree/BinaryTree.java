@@ -33,6 +33,15 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 			return left != null && right != null;
 		}
 
+		// 是否是左节点
+		public boolean isLeftChild() {
+			return parent != null && this == parent.left;
+		}
+		
+		// 是否是右节点
+		public boolean isRightChild() {
+			return parent != null && this == parent.right;
+		}
 	}
 	
 	// 创建通用构造器 
@@ -342,12 +351,6 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 
 	@Override
 	public Object string(Object node) {
-		Node<E> myNode = (Node<E>) node;
-		String parentString = "null";
-		if (myNode.parent != null) {
-			parentString = myNode.parent.element.toString();
-		}
-
-		return myNode.element + "_p(" + parentString + ")";
+		return node;
 	}
 }

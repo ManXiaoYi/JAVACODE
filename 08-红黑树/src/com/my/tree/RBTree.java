@@ -2,7 +2,7 @@ package com.my.tree;
 
 import java.util.Comparator;
 
-public class RBTree<E> extends BST<E> {
+public class RBTree<E> extends BBST<E> {
 	private static final boolean RED = false;
 	private static final boolean BLACK = true;
 
@@ -64,8 +64,56 @@ public class RBTree<E> extends BST<E> {
 	// ----------------------  方法  ----------------------
 	@Override
 	protected void afterAdd(Node<E> node) {
-		// TODO Auto-generated method stub
-		super.afterAdd(node);
+		Node<E> parent = node.parent;
+		
+		// 添加的是根节点
+		if (parent == null) {
+			black(node);
+			return;
+		}
+		
+		// 1、如果父节点是黑色，直接返回
+		if (isBlack(parent)) {
+			return;
+		}
+		
+		// 叔父节点
+		Node<E> uncle = parent.sibling();
+		// 祖父节点
+		Node<E> grand = parent.parent;
+		
+		if (isRed(uncle)) {
+			// 叔父节点是红色
+			black(parent);
+			black(uncle);
+			// 把祖父节点当做是 新添加的节点 - 递归调用
+			afterAdd(red(grand));
+			return;
+			
+		} 
+
+		// 叔父节点 不是红色
+		if (parent.isLeftChild()) { // L
+			red(grand);
+			if (node.isLeftChild()) { // LL
+				black(parent);
+			} else { // LR
+				black(node);
+				rotateLeft(parent);
+			}
+			rotateRight(grand);
+			
+		} else { // R
+			red(grand);
+			if (node.isLeftChild()) { // RL
+				black(node);
+				rotateRight(parent);				
+			} else { // RR
+				black(parent);
+			}
+			rotateLeft(grand);
+		}
+		
 	}
 
 	@Override

@@ -203,6 +203,7 @@ public class AVLTree<E> extends BST<E> {
 		b.parent = d;
 		d.right = f;
 		f.parent = d;
+		updateHeight(d);
 	}
 
 	// 新添加节点之后的处理

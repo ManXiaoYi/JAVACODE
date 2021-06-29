@@ -11,4 +11,6 @@
     <fullyQualifiedTypeName name="平衡二叉树.TreeNode"/>
     <fullyQualifiedTypeName name="java.awt.TexturePaint"/>
     <fullyQualifiedTypeName name="com.my.tree.BinaryTree.Node"/>
+    <fullyQualifiedTypeName name="com.my.tree.BBST"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.lir.alloc.trace.DefaultTraceRegisterAllocationPolicy.BottomUpRatioStrategy"/>
 </qualifiedTypeNameHistroy>

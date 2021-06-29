@@ -42,6 +42,18 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 		public boolean isRightChild() {
 			return parent != null && this == parent.right;
 		}
+		
+		// 兄弟节点
+		public Node<E> sibling() {
+			if (isLeftChild()) {
+				return parent.right;
+			}
+			if (isRightChild()) {
+				return parent.left;
+			}
+			return null;
+		}
+		
 	}
 	
 	// 创建通用构造器 

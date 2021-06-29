@@ -4,10 +4,11 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="sun.awt.geom.AreaOp.NZWindOp"/>
     <fullyQualifiedTypeName name="com.my.tree.AVLTree"/>
-    <fullyQualifiedTypeName name="com.my.tree.BinaryTree.Node"/>
     <fullyQualifiedTypeName name="javax.net.ssl.CertPathTrustManagerParameters"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="sun.java2d.pipe.ParallelogramPipe"/>
     <fullyQualifiedTypeName name="com.my.printer.BinaryTrees"/>
     <fullyQualifiedTypeName name="平衡二叉树.TreeNode"/>
+    <fullyQualifiedTypeName name="java.awt.TexturePaint"/>
+    <fullyQualifiedTypeName name="com.my.tree.BinaryTree.Node"/>
 </qualifiedTypeNameHistroy>

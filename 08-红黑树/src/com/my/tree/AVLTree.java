@@ -154,7 +154,7 @@ public class AVLTree<E> extends BBST<E> {
 
 	// 删除节点之后的处理
 	@Override
-	protected void afterRemove(Node<E> node) {
+	protected void afterRemove(Node<E> node, Node<E> repalcement) {
 		// node的父节点 不为null时 循环
 		while ((node = node.parent) != null) {
 			// 进入循环的都是node的父节点、祖父节点

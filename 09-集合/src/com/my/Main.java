@@ -10,7 +10,7 @@ import com.my.set.Set.Visitor;
 
 public class Main {
 	public static void main(String[] args) {
-		test3();
+//		test3();
 
 	}
 

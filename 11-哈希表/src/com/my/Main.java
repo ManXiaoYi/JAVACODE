@@ -141,11 +141,11 @@ public class Main {
 //		test4(new HashMap<>());
 //		test5(new HashMap<>());
 		
-		test1();
-		test2(new LinkedHashMap<>());
-		test3(new LinkedHashMap<>());
-		test4(new LinkedHashMap<>());
-		test5(new LinkedHashMap<>());
+//		test1();
+//		test2(new LinkedHashMap<>());
+//		test3(new LinkedHashMap<>());
+//		test4(new LinkedHashMap<>());
+//		test5(new LinkedHashMap<>());
 		
 		java.util.HashMap<String, String> map;
 		java.util.LinkedHashMap<String, String> map2;

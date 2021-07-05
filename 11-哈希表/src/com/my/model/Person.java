@@ -1,12 +1,11 @@
 package com.my.model;
 
-public class Person {
+public class Person implements Comparable<Person> {
 	private int age;
 	private float height;
 	private String name;
 
 	public Person(int age, float height, String name) {
-		super();
 		this.age = age;
 		this.height = height;
 		this.name = name;
@@ -43,4 +42,10 @@ public class Person {
 				&& person.height == height
 				&& (person.name == null ? name == null : person.name.equals(name));
 	}
+
+	@Override
+	public int compareTo(Person o) {
+		return age - o.age;
+	}
+
 }

@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="com.my.heap.AbstractHeap"/>
+    <fullyQualifiedTypeName name="com.sun.javadoc.RootDoc"/>
+    <fullyQualifiedTypeName name="E"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.core.phases.HighTier"/>
+    <fullyQualifiedTypeName name="com.my.printer.BinaryTreeInfo"/>
+    <fullyQualifiedTypeName name="com.my.heap.BinaryHeap"/>
+    <fullyQualifiedTypeName name="com.my.printer.BinaryTrees"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+</qualifiedTypeNameHistroy>

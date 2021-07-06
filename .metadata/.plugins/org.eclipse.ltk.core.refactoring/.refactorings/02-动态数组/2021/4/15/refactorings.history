@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.my.Assert&apos; to &apos;Asserts&apos;&#x0A;- Original project: &apos;02-动态数组&apos;&#x0A;- Original element: &apos;com.my.Assert&apos;&#x0A;- Renamed element: &apos;com.my.Asserts&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Assert&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.my{Assert.java[Assert" matchStrategy="1" name="Asserts" qualified="false" references="true" similarDeclarations="false" stamp="1617885042013" textual="false" version="1.0"/>
-</session>

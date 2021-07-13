@@ -1,10 +1,6 @@
 package com.my.heap;
 
 import java.util.Comparator;
-import java.util.Iterator;
-
-import com.my.printer.BinaryTreeInfo;
-import com.sun.javadoc.RootDoc;
 
 @SuppressWarnings("unchecked")
 
@@ -15,10 +11,9 @@ import com.sun.javadoc.RootDoc;
  *
  * @param <E>
  */
-public class BinaryHeap<E> extends AbstractHeap<E> implements BinaryTreeInfo {
+public class BinaryHeap<E> extends AbstractHeap<E> {
 	private E[] elements;
 	private static final int DEFAULT_CAPACITY = 10;
-
 	// 初始化
 	// --------------------------------------------------------------------------
 	public BinaryHeap(E[] elements, Comparator<E> comparator) {
@@ -220,29 +215,5 @@ public class BinaryHeap<E> extends AbstractHeap<E> implements BinaryTreeInfo {
 		if (element == null) {
 			throw new IllegalArgumentException("element must not be null");
 		}
-	}
-
-	// 打印相关
-	// --------------------------------------------------------------------------
-	@Override
-	public Object root() {
-		return 0;
-	}
-
-	@Override
-	public Object left(Object node) {
-		int index = ((int)node << 1) + 1;
-		return index >= size ? null : index;
-	}
-
-	@Override
-	public Object right(Object node) {
-		int index = ((int)node << 1) + 2;
-		return index >= size ? null : index;
-	}
-
-	@Override
-	public Object string(Object node) {
-		return elements[(int)node];
 	}
 }

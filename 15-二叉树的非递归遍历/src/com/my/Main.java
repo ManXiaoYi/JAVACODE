@@ -14,7 +14,7 @@ public class Main {
 			bst.add(data[i]);
 		}
 		// 树状打印
-		BinaryTrees.println(bst);
+//		BinaryTrees.println(bst);
 		// 遍历器
 		StringBuilder sb = new StringBuilder();
 		Visitor<Integer> visitor = new Visitor<Integer>() {

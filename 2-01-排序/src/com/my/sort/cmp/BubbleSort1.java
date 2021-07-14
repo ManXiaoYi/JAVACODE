@@ -5,7 +5,7 @@ import com.my.sort.Sort;
 /*
  * 冒泡排序
  */
-public class BubbleSort1<E extends Comparable<E>> extends Sort<E> {
+public class BubbleSort1<T extends Comparable<T>> extends Sort<T> {
 
 	@Override
 	protected void sort() {

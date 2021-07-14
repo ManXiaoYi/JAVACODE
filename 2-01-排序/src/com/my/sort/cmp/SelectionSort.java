@@ -2,7 +2,7 @@ package com.my.sort.cmp;
 
 import com.my.sort.Sort;
 
-public class SelectionSort<E extends Comparable<E>> extends Sort<E> {
+public class SelectionSort<T extends Comparable<T>> extends Sort<T> {
 
 	@Override
 	protected void sort() {

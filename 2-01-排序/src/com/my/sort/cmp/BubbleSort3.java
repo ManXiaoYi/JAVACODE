@@ -7,7 +7,7 @@ import com.my.sort.Sort;
  * 优化方案二：
  * 如果序列尾部已经局部有序，可以记录最后一次交换的位置，减少比较次数
  */
-public class BubbleSort3<E extends Comparable<E>> extends Sort<E> {
+public class BubbleSort3<T extends Comparable<T>> extends Sort<T> {
 
 	@Override
 	protected void sort() {

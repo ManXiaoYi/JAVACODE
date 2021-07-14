@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.my.heap.AbstractHeap"/>
     <fullyQualifiedTypeName name="com.sun.javadoc.RootDoc"/>
-    <fullyQualifiedTypeName name="E"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.core.phases.HighTier"/>
@@ -29,7 +28,6 @@
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="com.my.tree.BinaryTree.Node"/>
     <fullyQualifiedTypeName name="javax.swing.text.View"/>
-    <fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
     <fullyQualifiedTypeName name="jdk.internal.net.http.RequestPublishers.ByteArrayPublisher"/>
     <fullyQualifiedTypeName name="com.sun.jdi.ArrayType"/>
     <fullyQualifiedTypeName name="com.sun.jndi.ldap.Ber"/>
@@ -43,10 +41,20 @@
     <fullyQualifiedTypeName name="com.my.sort.cmp.BubbleSort3"/>
     <fullyQualifiedTypeName name="com.my.sort.cmp.SelectionSort"/>
     <fullyQualifiedTypeName name="com.my.sort.cmp.HeapSort"/>
-    <fullyQualifiedTypeName name="com.my.tools.Integers"/>
-    <fullyQualifiedTypeName name="com.my.tools.Asserts"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.my.sort.Sort"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="com.my.Student"/>
+    <fullyQualifiedTypeName name="com.my.sort.cmp.InsertionSort"/>
+    <fullyQualifiedTypeName name="com.my.sort.cmp.InsertionSort2"/>
+    <fullyQualifiedTypeName name="sun.util.resources.cldr.ext.CurrencyNames_ur"/>
+    <fullyQualifiedTypeName name="com.my.tools.Integers"/>
+    <fullyQualifiedTypeName name="E"/>
+    <fullyQualifiedTypeName name="com.sun.tools.classfile.Annotation.element_value"/>
+    <fullyQualifiedTypeName name="com.my.tools.Asserts"/>
+    <fullyQualifiedTypeName name="com.my.sort.BinarySearch"/>
+    <fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
+    <fullyQualifiedTypeName name="com.my.sort.Sort"/>
+    <fullyQualifiedTypeName name="T"/>
+    <fullyQualifiedTypeName name="sun.lwawt.macosx.CDragSourceContextPeer"/>
+    <fullyQualifiedTypeName name="com.my.sort.cmp.InsertionSort3"/>
 </qualifiedTypeNameHistroy>

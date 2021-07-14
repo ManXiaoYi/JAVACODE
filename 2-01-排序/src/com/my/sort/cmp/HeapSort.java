@@ -5,7 +5,7 @@ import com.my.sort.Sort;
 /**
  * 堆排序
  */
-public class HeapSort<E extends Comparable<E>>  extends Sort<E> {
+public class HeapSort<T extends Comparable<T>>  extends Sort<T> {
 	// 堆的大小
 	private int heapSize;
 
@@ -32,13 +32,13 @@ public class HeapSort<E extends Comparable<E>>  extends Sort<E> {
 
 	// 下滤
 	private void siftDown(int index) {
-		E element = array[index];
+		T element = array[index];
 
 		int half = heapSize >> 1;
 		while (index < half) { // index必须是非叶子节点
 			// 默认是左边跟父节点比
 			int childIndex = (index << 1) + 1;
-			E child = array[childIndex];
+			T child = array[childIndex];
 
 			int rightIndex = childIndex + 1;
 			// 右子节点比左子节点大

@@ -11,9 +11,9 @@ import com.my.Student;
  * E 必须是 可比较的
  *
  */
-public abstract class Sort<E extends Comparable<E>> implements Comparable<Sort<E>> {
+public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T>> {
 	// 数组
-	protected E[] array;
+	protected T[] array;
 	// 比较次数
 	private int cmpCount;
 	// 交换次数
@@ -24,7 +24,7 @@ public abstract class Sort<E extends Comparable<E>> implements Comparable<Sort<E
 	private DecimalFormat fmt = new DecimalFormat("#.00");
 
 	// 排序
-	public void sort(E[] array) {
+	public void sort(T[] array) {
 		if (array == null || array.length < 2) {
 			return;
 		}
@@ -41,7 +41,7 @@ public abstract class Sort<E extends Comparable<E>> implements Comparable<Sort<E
 
 	// 比较规则
 	@Override
-	public int compareTo(Sort<E> o) {
+	public int compareTo(Sort<T> o) {
 		int result = (int)(time - o.time);
 		if (result != 0) return result;
 		
@@ -63,7 +63,7 @@ public abstract class Sort<E extends Comparable<E>> implements Comparable<Sort<E
 	}
 	
 
-	protected int cmp(E v1, E v2) {
+	protected int cmp(T v1, T v2) {
 		cmpCount++;
 		return v1.compareTo(v2);
 	}
@@ -73,7 +73,7 @@ public abstract class Sort<E extends Comparable<E>> implements Comparable<Sort<E
 	 */
 	protected void swap(int i1, int i2) {
 		swapCount++;
-		E tmp = array[i1];
+		T tmp = array[i1];
 		array[i1] = array[i2];
 		array[i2] = tmp;
 	}
@@ -112,7 +112,7 @@ public abstract class Sort<E extends Comparable<E>> implements Comparable<Sort<E
 		for (int i = 0; i < students.length; i++) {
 			students[i] = new Student(i * 10, 10);
 		}
-		sort((E[]) students);
+		sort((T[]) students);
 		for (int i = 1; i < students.length; i++) {
 			int score = students[i].score;
 			int prevScore = students[i - 1].score;

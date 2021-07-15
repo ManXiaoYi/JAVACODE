@@ -3,6 +3,7 @@ package com.my;
 import java.util.Arrays;
 
 import com.my.sort.BinarySearch;
+import com.my.sort.CountingSort;
 import com.my.sort.Sort;
 import com.my.sort.cmp.BubbleSort1;
 import com.my.sort.cmp.BubbleSort2;
@@ -11,7 +12,10 @@ import com.my.sort.cmp.HeapSort;
 import com.my.sort.cmp.InsertionSort1;
 import com.my.sort.cmp.InsertionSort2;
 import com.my.sort.cmp.InsertionSort3;
+import com.my.sort.cmp.MergeSort;
+import com.my.sort.cmp.QuickSort;
 import com.my.sort.cmp.SelectionSort;
+import com.my.sort.cmp.ShellSort;
 import com.my.tools.Asserts;
 import com.my.tools.Integers;
 
@@ -22,17 +26,22 @@ public class Main {
 		test1();
 		test2();
 		
-		Integer[] array = Integers.random(10000, 1, 20000);
+//		Integer[] array = Integers.random(30000, 1, 30000);
+		Integer[] array = {7,3,5,8,6,7,4,5};
 
 		testSorts(array, 
 //				new BubbleSort1(), 
 //				new BubbleSort2(), 
-				new BubbleSort3(), 
-				new SelectionSort(), 
-				new HeapSort(),
-				new InsertionSort1<>(),
-				new InsertionSort2<>(),
-				new InsertionSort3<>()
+//				new BubbleSort3(), 
+//				new SelectionSort(), 
+//				new HeapSort(),
+//				new InsertionSort1<>(),
+//				new InsertionSort2<>(),
+//				new InsertionSort3<>(),
+//				new MergeSort<>(),
+//				new QuickSort<>(),
+//				new ShellSort<>(),
+				new CountingSort()
 				);
 	}
 

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.AbstractBeginNode"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="V"/>
     <fullyQualifiedTypeName name="com.my.Trie.Trie.Node"/>
     <fullyQualifiedTypeName name="com.my.tree.BST"/>
@@ -26,7 +24,6 @@
     <fullyQualifiedTypeName name="com.my.tools.Integers"/>
     <fullyQualifiedTypeName name="E"/>
     <fullyQualifiedTypeName name="com.sun.tools.classfile.Annotation.element_value"/>
-    <fullyQualifiedTypeName name="com.my.tools.Asserts"/>
     <fullyQualifiedTypeName name="com.my.sort.BinarySearch"/>
     <fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
     <fullyQualifiedTypeName name="sun.lwawt.macosx.CDragSourceContextPeer"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="org.graalvm.compiler.lir.aarch64.AArch64FrameMapBuilder"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="com.my.union.UnionFind"/>
+    <fullyQualifiedTypeName name="com.my.union.UnionFind_QF"/>
+    <fullyQualifiedTypeName name="com.my.union.UnionFind_QU"/>
+    <fullyQualifiedTypeName name="com.my.tools.Asserts"/>
 </qualifiedTypeNameHistroy>

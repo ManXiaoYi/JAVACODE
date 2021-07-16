@@ -3,6 +3,7 @@ package com.my.sort;
 import java.text.DecimalFormat;
 
 import com.my.Student;
+import com.my.sort.cmp.SelectionSort;
 import com.my.sort.cmp.ShellSort;
 
 @SuppressWarnings("rawtypes")
@@ -105,10 +106,10 @@ public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T
 	}
 	
 	private boolean isStable() {
-//		if (this instanceof RadixSort) return true;
+		if (this instanceof RadixSort) return true;
 		if (this instanceof CountingSort) return true;
 		if (this instanceof ShellSort) return false;
-//		if (this instanceof SelectionSort) return false;
+		if (this instanceof SelectionSort) return false;
 		Student[] students = new Student[20];
 		for (int i = 0; i < students.length; i++) {
 			students[i] = new Student(i * 10, 10);

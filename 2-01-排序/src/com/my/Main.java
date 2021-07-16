@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import com.my.sort.BinarySearch;
 import com.my.sort.CountingSort;
+import com.my.sort.RadixSort;
 import com.my.sort.Sort;
 import com.my.sort.cmp.BubbleSort1;
 import com.my.sort.cmp.BubbleSort2;
@@ -23,35 +24,19 @@ import com.my.tools.Integers;
 
 public class Main {
 	public static void main(String[] args) {
-		test1();
-		test2();
-		
-//		Integer[] array = Integers.random(30000, 1, 30000);
-		Integer[] array = {7,3,5,8,6,7,4,5};
+//		test1();
+//		test2();
+//		test3();
 
-		testSorts(array, 
-//				new BubbleSort1(), 
-//				new BubbleSort2(), 
-//				new BubbleSort3(), 
-//				new SelectionSort(), 
-//				new HeapSort(),
-//				new InsertionSort1<>(),
-//				new InsertionSort2<>(),
-//				new InsertionSort3<>(),
-//				new MergeSort<>(),
-//				new QuickSort<>(),
-//				new ShellSort<>(),
-				new CountingSort()
-				);
 	}
 
 	static void testSorts(Integer[] array, Sort... sorts) {
 		for (Sort sort : sorts) {
 			Integer[] newArray = Integers.copy(array);
 
-//			Integers.println(newArray);
+			Integers.println(newArray);
 			sort.sort(newArray);
-//			Integers.println(newArray);
+			Integers.println(newArray);
 
 			Asserts.test(Integers.isAscOrder(newArray));
 		}
@@ -79,4 +64,24 @@ public class Main {
 		Asserts.test(BinarySearch.search(array1, 8) == 5);
 	}
 	
+	static void test3() {
+//		Integer[] array = Integers.random(30000, 1, 30000);
+		Integer[] array = {7,23,5,128,16,7,4,25};
+
+		testSorts(array, 
+//				new BubbleSort1(), 
+//				new BubbleSort2(), 
+//				new BubbleSort3(), 
+//				new SelectionSort(), 
+//				new HeapSort(),
+//				new InsertionSort1<>(),
+//				new InsertionSort2<>(),
+//				new InsertionSort3<>(),
+//				new MergeSort<>(),
+//				new QuickSort<>(),
+//				new ShellSort<>(),
+//				new CountingSort(),
+				new RadixSort()
+				);
+	}
 }
